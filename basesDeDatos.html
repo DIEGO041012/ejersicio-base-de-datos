@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <title>Crud con JavaScript</title>
+</head>
+<body> 
+    <h1>Crud con JavaScript y bases de datos no relacionales</h1>
+    <section class="container">
+        <h2 class="text-center text-warning">Manipulacion de Datos</h2>
+        <form action="">
+            <label for="">Identificación</label>
+            <input type="text" name="id" id="id" class="form-control">
+            <label for="">Nombre:</label>
+            <input type="text" name="nombre" id="nombre" class="form-control">
+            <label for="">Profesion:</label>
+            <input type="text" name="profesion" id="profesion" class="form-control">
+            <label for="">Salario:</label>
+            <input type="text" name="salario" id="salario" class="form-control">
+            <button class="btn btn-success mt-3" id="guardar" type="button" onclick="guardarDatos()">Guardar Datos</button>
+            <button class="btn btn-primary mt-3" id="actualizar">Actualizar Datos</button>
+
+        </form>
+        <hr>
+        <section class="row mt-5">
+            <section class="col-12">
+                <table class="table listado" id="crudTable">
+                    <thead>
+                        <tr>
+                            <th>Id</th>
+                            <th>Nombre</th>
+                            <th>Profesion</th>
+                            <th>Salario</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                    </tbody>
+                </table>
+            </section>
+        </section>
+    </section>
+    <script src="./localStorage.js"></script>
+</body>
+</html>
+
